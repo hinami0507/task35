@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Microsoft Yahei';
+}
+
+#box {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    margin: 50px auto 10px auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#box ul {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#box ul > li {
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    float: left;
+    font-size: 12px;
+}
+
+.count {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.count.row {
+    top: -50px;
+}
+
+.count.row li {
+    width: 50px;
+    margin-right: -1px;
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.count.col {
+    left: -50px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -1px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: red;
+    box-sizing: border-box;
+    border-top: 10px solid blue;
+}
+
+#consoler {
+    width: 600px;
+    margin: 0px auto;
+    text-align: center;
+    height: 150px;
+}
+#consoler ul{
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    height: 150px;
+    top:0px;
+    vertical-align: top;
+    position: relative;
+}
+#consoler input{
+    background: #4CCA3E;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+#consoler>ul>li{
+    color: #fff;
+    background: #CCCCCC;
+}
+#consoler>ul>.error
+{
+    background: red;
+}
+#txt{
+    line-height: 21px;
+    background: #000000;
+    color: #2C7F23;
+    font-weight: bold;
+}
+#car{
+
+    transition: left 1s,right 1s,top 1s,bottom 1s,-webkit-transform 1s;
+    -webkit-transition: left 1s,right 1s,top 1s,bottom 1s,-webkit-transform 1s; /* Safari */
+}
+
+#tip{
+    margin-right: 20px;
+    float: right;
+    width: 350px;
+}
+
+#tip h5{
+    margin-top: 20px;
+    display: block;
+}
+.butt{
+    display: block;
+    margin: 0px auto 10px auto;
+    width: 200px;
+}
+
+#consoler{
+    counter-reset: item;
+}
+#LineNum > *:before {
+  counter-increment: item;
+  content: counter(item);
+}
